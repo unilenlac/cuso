@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="gr">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Le Martyre de Philippe - Mt Athos - gr. 450</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>IRSB - « Éditer numériquement la littérature apocryphe chrétienne » (ENLAC) </publisher>
+				<pubPlace>Lausanne</pubPlace>
+				<date>2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc xml:id="D">
+					<msIdentifier>
+						<country>Grèce</country>
+						<settlement>Mont Athos</settlement>
+						<repository>Iviron Monastery</repository>
+						<collection>Gr.</collection>
+						<idno>450</idno>
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+      		<refsDecl>
+				<citeStructure unit="milestone" match="//milestone" use="@n">
+					<citeStructure unit="line" match="following::lb" use="position()" delim="."/>
+				</citeStructure>
+				<citeStructure unit="page" match="//pb" use="@n">
+					<citeStructure unit="line" match="following::lb" use="@n" delim="."/>
+				</citeStructure>
+			</refsDecl>
+		</encodingDesc>
+		<revisionDesc status="transcription-finished">
+			<change/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div type="oeuvre">
+				<ab>
+                <milestone n="144"/><lb n="16"/>καὶ εἰπὼν ταύτα ὁ φίλιππος ηὔξατο οὖτως·<lb n="17"/>
+					κύριε ιησοῦ χριστέ ὁ πατὴρ τῶν αἰώνων, βασιλεῦ τοῦ φωτὸς·<lb n="18"/>
+					ὀ σοφίσας ἡμῶν ἐν τῆ σοφία σου· καὶ δοὺς ἡμῖν τῆν σκυνήν σύνεσιν ε<lb n="19" break="no"/>
+					χαρίσο δ<unclear reason="illegible"/>μῖν τὴν βουλὴν τῆς ἀγαθότητός σου· ὁ μηδέποτε<lb n="20"/>
+					χωρισθεῖς ἡμῶν· σὺ εἶ ὁ αἵρων τὴν νόσον τῶν καταφευγόντων εἰς<lb n="21"/>
+					σὲ· σὺ εἰ ὁ δεδωκὼς ἡμῖν <unclear reason="illegible"/>καὶ τέρατα· καὶ ἐπιστρέψας τοὺς<lb n="22"/>
+					πλανηθέντας· <unclear reason="illegible"/>φανων<unclear reason="illegible"/>ἀντίπαλον κα- <add place="below" hand="manus1">-λὸς ἐγω</add>
+					<pb n="203r"/>
+					<lb n="1"/>
+					ἀγωνοθέτης· ἐλθὲ νῦν ιησοὺ καὶ δός μοι τὸν στέφανον τῆς νήκης αἰώνιον<lb n="2"/>
+					κατά πάσης ἐναντίας ἀρχὴς καὶ ἐξουσίας·
+				</ab>
+			</div>
+		</body>
+	</text>
+</TEI>

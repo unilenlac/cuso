@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="gr">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Le Martyre de Philippe</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>IRSB - Projet FNS « Éditer numériquement la littérature apocryphe chrétienne » (ENLAC) </publisher>
+				<pubPlace>Lausanne</pubPlace>
+				<date>2021</date>
+			</publicationStmt>
+		<sourceDesc>
+			<msDesc xml:id="A">
+				<msIdentifier>
+					<country>Italy</country>
+					<settlement>Brescia</settlement>
+					<repository>Biblioteca Queriniana</repository>
+					<collection>manoscritti</collection>
+					<idno>A. III</idno>
+				</msIdentifier>
+			</msDesc>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		  <refsDecl>
+			<citeStructure unit="milestone" match="//milestone" use="@n">
+				<citeStructure unit="line" match="following::lb" use="position()" delim="."/>
+			</citeStructure>
+			<citeStructure unit="page" match="//pb" use="@n">
+				<citeStructure unit="line" match="following::lb" use="@n" delim="."/>
+			</citeStructure>
+		</refsDecl>
+	</encodingDesc>
+	<revisionDesc status="transcription-finished">
+		<change/>
+	</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div type="oeuvre">
+				<ab><lb n="3"/><milestone n="144"/>καὶ εἰπὼν ταῦτα ὁ φίλιππος, ηὔξατο οὔτος· <abbr type="ns">κε</abbr><abbr type="ns">ιῦ</abbr><abbr type="ns">χε</abbr> ὁ <abbr type="ns">πὴρ</abbr>τῶν<lb n="4"/>
+                αἰώνων· ὁ βασιλεὺς τοῦ φωτὸς· ὁ σοφίσας ἡμᾶς ἐκ τῆς σοφίας σου· καὶ δοῦς ἡμῖν τὴν<lb n="5"/>
+                σὴν σύνεσιν· ἐχαρήσω δὲ ἡμῖν τὴν βουλὴν τῆς ἀγαθότητός σου· ὁ μηδέποτε χορισθεὶς ἡμῖν·<lb n="6"/>
+                σὺ εἶ ὁ δεδωκῶς ἡμῖν τὴν παρουσίαν τῆς σῆς σοφίας· σὺ εἲ ὁ αἴρων τὴν νόσον τῶν κατα<lb n="7" break="no"/>
+                φευγόντων εἰς σὲ· σὺ εἶ ὁ δεδωκῶς ἡμῖν σημεῖα καὶ τέρατα· καὶ ἐπιστρέψας τοὺς πλανη<lb n="8" break="no"/>
+                θέντας· ὁ στεφανῶν τοὺς νικόντας ὑπὲρ τῶν ἀντιδίκων· ὁ καλὸς ἀγωνοθέτης·<lb n="9"/>
+                ἐλθὲν οὐν <abbr type="ns">ιῦ</abbr>· καὶ δός μοι τὸ στέφανον τῆς νίκης τὸ αἰώνιον·
+				</ab></div></body></text></TEI>

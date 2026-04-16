@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../misc/tei-layout.xsl"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="gr">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Le Martyre de Philippe - athous iviron 476</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>IRSB - Projet FNS « Éditer numériquement la littérature apocryphe chrétienne » (ENLAC) </publisher>
+				<pubPlace>Lausanne</pubPlace>
+				<date>2026</date>
+			</publicationStmt>
+		<sourceDesc>
+			<msDesc xml:id="B">
+				<msIdentifier>
+					<country>Grèce</country>
+					<settlement>Iviron</settlement>
+					<repository>Mont Athos - Monastère d'Iviron</repository>
+					<collection></collection>
+					<idno>Mss. 0476 (Lambros 4596)</idno>
+				</msIdentifier>
+			</msDesc>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<refsDecl>
+			<citeStructure unit="episode" match="//milestone" use="@n">
+				<citeStructure unit="line" match="following::lb" use="position()" delim="."/>
+			</citeStructure>
+			<citeStructure unit="page" match="//pb" use="@n">
+				<citeStructure unit="page-line" match="following::lb" use="@n" delim="."/>
+			</citeStructure>
+		</refsDecl>
+	</encodingDesc>
+	<revisionDesc status="transcription-finished">
+		<change />
+	</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div type="oeuvre">
+				<pb n="105v"/>
+				<cb n="8"/>
+				<ab><lb n="8"/>
+                <milestone n="144"/>καὶ εἰπὼν, ηὔξατο οὕτως·<lb n="9"/>
+                <abbr type="ns">Κε</abbr> <abbr type="ns">Ἰῦ</abbr> <abbr type="ns">Χε</abbr> ὁ <abbr type="ns">πηρ</abbr> τῶν αἰώνων· βασι<lb n="10" break="no"/>
+                λεῦ τοῦ φωτός ὁ σοφίσας ἡμᾶς ἐν τῆ<lb n="11"/>
+                σοφία σου· καὶ δοὺς ἡμῖν τὴν σήν σύ<lb n="12" break="no"/>
+                νεσιν· ὁ χαρισάμενος ἡμῖν τὴν βουλὴν<lb n="13"/>
+                τῆς ἀγαθότητός σου καὶ μηδέποτε χω<lb n="14" break="no"/>
+                ρισθεὶς ἡμῶν, σὺ εἶ ὁ αἴρων τὰς νόσους<lb n="15"/>
+                τῶν καταφευγόντων εἰς σέ· σὺ εἶ ὁ<lb n="16"/>
+                δεδωκὼς ἡμῖν τὴν σὴν παρρησίαν τῆς σο<lb n="17" break="no"/>
+                φίας· ὁ δεδωκὼς ἡμῖν σημεῖα καὶ<lb n="18"/>
+                τέρατα, καὶ ἐπιστρέψας τοὺς πλανη<lb n="19" break="no"/>
+                θέντας· ὁ στεφανῶν τοὺς νικῶντας<lb n="20"/>
+                τὸν ἀντίπαλον, ὁ καλὸς ἀγωνοθέτης,
+                <!-- f. 123r -->
+                <pb n="123r"/>
+                <lb n="1"/>
+                ἐλθὲ νῦν <abbr type="ns">Ἰῦ</abbr>· καὶ δός μοι τὸν στέφανον<lb n="2"/>
+                τῆς νίκης αἰώνιον·<lb n="3"/>
+			</div>
+		</body>
+	</text>
+</TEI>
